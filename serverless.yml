@@ -21,7 +21,7 @@ provider:
         Fn::Join: ["", ["arn:aws:s3:::", '${self:custom.bucket}', '/*']]
 
 functions:
-  currentTime:
+  transcribe:
     handler: handler.endpoint
     events:
       - http:
