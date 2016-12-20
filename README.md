@@ -57,13 +57,7 @@ functions:
 
 ## Usage
 
-You can now invoke the Lambda directly and even see the resulting log via
-
-```bash
-serverless invoke --function endpoint --log
-```
-
-or as send an HTTP request directly to the endpoint using a tool like curl
+Send an HTTP request directly to the endpoint using a tool like curl
 
 ```bash
 curl -X POST https://XXXXXXX.execute-api.us-east-1.amazonaws.com/request --data '{"key":"s3Key",}'
